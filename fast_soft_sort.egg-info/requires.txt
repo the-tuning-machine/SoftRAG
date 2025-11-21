@@ -1,0 +1,6 @@
+numba
+numpy
+scipy>=1.2.0
+
+[tf]
+tensorflow>=1.12

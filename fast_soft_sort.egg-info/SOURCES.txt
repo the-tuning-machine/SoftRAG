@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+fast_soft_sort/__init__.py
+fast_soft_sort/jax_ops.py
+fast_soft_sort/numpy_ops.py
+fast_soft_sort/pytorch_ops.py
+fast_soft_sort/tf_ops.py
+fast_soft_sort.egg-info/PKG-INFO
+fast_soft_sort.egg-info/SOURCES.txt
+fast_soft_sort.egg-info/dependency_links.txt
+fast_soft_sort.egg-info/requires.txt
+fast_soft_sort.egg-info/top_level.txt
+fast_soft_sort/third_party/__init__.py
+fast_soft_sort/third_party/isotonic.py

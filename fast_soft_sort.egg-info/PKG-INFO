@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: fast_soft_sort
+Version: 0.1
+Summary: Differentiable sorting and ranking in O(n log n).
+Home-page: https://github.com/google-research/fast-soft-sort
+Author: Google LLC
+Author-email: no-reply@google.com
+License: BSD
+Keywords: machine learning sorting ranking
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: scipy>=1.2.0
+Provides-Extra: tf
+Requires-Dist: tensorflow>=1.12; extra == "tf"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary

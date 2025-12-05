@@ -46,9 +46,9 @@ def Psi_alpha_Surface(M, A):
         mask = mask_neg_1
         Z[mask] = M[mask] * np.log(M[mask]) - M[mask]
         
-        # C.3. Alpha = INF (Logarithmique Négative)
-        mask = mask_inf
-        Z[mask] = -np.log(M[mask])
+        # # C.3. Alpha = INF (Logarithmique Négative)
+        # mask = mask_inf
+        # Z[mask] = -np.log(M[mask])
 
         # Final cleanup for NaN/Inf values
         Z[np.isinf(Z)] = np.nan
@@ -75,11 +75,11 @@ Z = np.where(Z > Z_MAX_LIMIT, Z_MAX_LIMIT, Z) # Clipping final des valeurs trop 
 fig = go.Figure(data=[go.Surface(z=Z, x=M, y=A, colorscale='viridis')])
 
 fig.update_layout(
-    title=r'Surface 3D de la Fonction Génératrice $\Psi_{\alpha}(\mu)$',
+    title='Surface 3D de la Fonction Génératrice Ψₐ(μ)',
     scene=dict(
-        xaxis_title=r'$\mu$',
-        yaxis_title=r'$\alpha$',
-        zaxis_title=r'$\Psi(\mu, \alpha)$ (Max 5)',
+        xaxis_title='μ',
+        yaxis_title='α',
+            zaxis_title='Ψ_α(μ)',
         zaxis=dict(range=[np.min(Z[~np.isnan(Z)]), Z_MAX_LIMIT]), # Ajustement de Z_min
         
         # Maintien de l'échelle visuelle
